@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:id="@+id/headerView"
+    android:background="#FFCC11"
+    android:orientation="vertical"
+    >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_nav"
+            android:id="@+id/imageView"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textViewFullName"
+                            android:text="John Doe"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textViewEmailAddress"
+                            android:text="john.doe@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageViewPremium"
+                android:src="@drawable/premium_badgehdpi"
+                android:layout_marginLeft="40dp"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/settingsButton"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icon_settings"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    tools:context="au.com.appscore.mrtradie.activity.Premium">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:id="@+id/name_tradie"
+                        android:text="Jonh Doe"
+                        android:paddingRight="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/premium_status"
+                        android:src="@drawable/badge_premium_activehdpi"
+                        android:layout_toEndOf="@+id/name_tradie" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:id="@+id/valid_time"
+                    android:text="Valid until 25/09/016"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#BBBBBB"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_left"
+                    android:text="[1 month(s) subscription]"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#BBBBBB"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Renew Your Membership now."
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="#6D6D6D"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="25dp">
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:paddingTop="5dp"
+                        android:id="@+id/ten_dollar_top_up"
+                        android:src="@drawable/subscribe_10dollarhdpi"/>
+                    <ImageView
+                        android:layout_width="147dp"
+                        android:layout_height="68dp"
+                        android:id="@+id/hundred_dollor_top_up"
+                        android:src="@drawable/subscribe_100dollarhdpi"
+                        android:layout_alignBottom="@+id/ten_dollar_top_up"
+                        android:layout_toEndOf="@+id/ten_dollar_top_up"
+                        android:layout_alignParentTop="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDC2BF"/>
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Premium Listing"
+                android:textColor="#484848"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDC2BF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+                <TextView
+                    android:paddingTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Leading Energy Electrical"
+                    android:id="@+id/tradie_title"
+                    android:layout_gravity="center_horizontal"/>
+                <ImageView
+                    android:paddingTop="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/badge_premiumlistinghdpi"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:id="@+id/valid_time1"
+                    android:text="Valid until 25/09/016"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#BBBBBB"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_left1"
+                    android:text="[1 month(s) subscription]"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#BBBBBB"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Renew Your Membership now and stay on top."
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="#6D6D6D"/>
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ten_dollar_top_up1"
+                    android:src="@drawable/premiumlisting_buybuttonhdpi"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDC2BF"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who go Premium?"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="A Premium Listing On Mr.Tradie allows you to "
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="catch the maximum attention of our users, earn trust"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="and get enough views to boost your business."
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="20dp"/>
+                <include layout="@layout/premium_listing_footage"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

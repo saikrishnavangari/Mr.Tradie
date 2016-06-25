@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">Mr Tradie</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_login_screen">Mr Tradie</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_tradie_sign_up_screen">TradieSignUpScreen</string>
+
+    <string name="facebook_app_id">178087305723470</string>
+
+    <string name="album_name">Mr-Tradie</string>
+
+    <string-array name="occupations_array">
+        <item>Select...</item>
+        <item>Air Conditioning</item>
+        <item>Alarm &amp; Security services</item>
+        <item>Antenna Services</item>
+        <item>Appliance Installation</item>
+        <item>Appliance Repairs</item>
+        <item>Arborist</item>
+        <item>Arches</item>
+        <item>Architects</item>
+        <item>Asbestos Removal</item>
+        <item>Attic Access Ladders</item>
+        <item>Awning Suppliers</item>
+        <item>Awnings</item>
+        <item>Balustrade</item>
+        <item>Bamboo Flooring</item>
+        <item>Bath &amp; Basin Resurfacing</item>
+        <item>Bathroom</item>
+        <item>Bathroom Accessories</item>
+        <item>Bathroom Fittings</item>
+        <item>Bathroom Sinks</item>
+        <item>Bathroom Vanities</item>
+        <item>Baths</item>
+        <item>Beds</item>
+        <item>Blinds</item>
+        <item>Blinds Suppliers</item>
+        <item>Book Cases</item>
+        <item>Boring &amp; Drilling</item>
+        <item>Brackets</item>
+        <item>Bricklaying</item>
+        <item>Building</item>
+        <item>Building Certifiers</item>
+        <item>Building Consultants</item>
+        <item>Building Designer</item>
+        <item>Building Inspector</item>
+        <item>Building Services</item>
+        <item>Building Supplies &amp; Materials</item>
+        <item>Building Surveyors</item>
+        <item>Cabinets</item>
+        <item>Carpenters</item>
+        <item>Carpet &amp; Upholstery Cleaning</item>
+        <item>Carpet Repair &amp; Laying</item>
+        <item>Carpets</item>
+        <item>Carports</item>
+        <item>Cement</item>
+        <item>Cladding</item>
+        <item>Cleaning Products</item>
+        <item>Cleaner</item>
+        <item>Clothesline</item>
+        <item>Coating Materials</item>
+        <item>Coffee Tables</item>
+        <item>Columns</item>
+        <item>Concreting</item>
+        <item>Crane Hire</item>
+        <item>Cubby Houses</item>
+        <item>Curtains</item>
+        <item>Damp Proofing</item>
+        <item>Decking &amp; Patio</item>
+        <item>Demolition</item>
+        <item>Dining Tables</item>
+        <item>Doors</item>
+        <item>Drafting</item>
+        <item>Drains</item>
+        <item>Drawer Systems</item>
+        <item>Ducted Vacuum Systems</item>
+        <item>Electricians</item>
+        <item>Energy Conservation</item>
+        <item>Engineering - Structural</item>
+        <item>Entertainment Units</item>
+        <item>Equipment Hire</item>
+        <item>Excavation</item>
+        <item>Extensions &amp; Additions</item>
+        <item>Fabricator</item>
+        <item>Fencer</item>
+        <item>Fire Protection Materials</item>
+        <item>Fireplaces</item>
+        <item>Floor Heating</item>
+        <item>Frames &amp; Trusses</item>
+        <item>Furniture – Retailers</item>
+        <item>Furniture – Removal</item>
+        <item>Garages</item>
+        <item>Gardener</item>
+        <item>Gazebo</item>
+        <item>Glass &amp; Glazing</item>
+        <item>Guttering Services</item>
+        <item>Handyman</item>
+        <item>Hardware</item>
+        <item>Heaters</item>
+        <item>Home Security Products</item>
+        <item>Home Theatre</item>
+        <item>Homewares</item>
+        <item>Hot Water Systems</item>
+        <item>Inspections - Pest</item>
+        <item>Insulation</item>
+        <item>Interior Design / Decorating</item>
+        <item>Irrigation Systems</item>
+        <item>Kitchen</item>
+        <item>Landscaper</item>
+        <item>Lawn Mowing</item>
+        <item>Lifts</item>
+        <item>Lighting</item>
+        <item>Locksmiths</item>
+        <item>Mechanical Engineer</item>
+        <item>Nurseries</item>
+        <item>Painter</item>
+        <item>Paving</item>
+        <item>Pergolas</item>
+        <item>Pest Control</item>
+        <item>Plumbers</item>
+        <item>Plasterer</item>
+        <item>Pools</item>
+        <item>Rainwater Tanks</item>
+        <item>Removalist</item>
+        <item>Rendering</item>
+        <item>Renovation Builder</item>
+        <item>Roller Doors</item>
+        <item>Roofing</item>
+        <item>Rubbish Removal</item>
+        <item>Scaffolding</item>
+        <item>Security Screens &amp; Doors</item>
+        <item>Signage</item>
+        <item>Skip &amp; Truck Hire</item>
+        <item>Solar</item>
+        <item>Spas</item>
+        <item>Staircases</item>
+        <item>Storage</item>
+        <item>Structural Engineer</item>
+        <item>Surveyor</item>
+        <item>Telephone</item>
+        <item>Tilers / Suppliers</item>
+        <item>Timber Flooring</item>
+        <item>Toilet Suppliers</item>
+        <item>Tools</item>
+        <item>Town Planning</item>
+        <item>Tree Lopping</item>
+        <item>Upholstery</item>
+        <item>Ventilation</item>
+        <item>Verandas</item>
+        <item>Vinyl &amp; Laminate</item>
+        <item>Wallpapering</item>
+        <item>Wardrobes</item>
+        <item>Waste Removal</item>
+        <item>Water Features</item>
+        <item>Waterproofing</item>
+        <item>Window Cleaner</item>
+        <item>Windows</item>
+        <item>Wine Racks</item>
+        <item>Wood Care Products</item>
+
+    </string-array>
+
+    <string-array name="services">
+        <item>Accountants</item>
+        <item>Air Conditioning</item>
+        <item>Appliances</item>
+        <item>Architect</item>
+        <item>Builder</item>
+        <item>Concreting</item>
+    </string-array>
+
+    <string name="title_activity_customer_sign_up_screen">CustomerSignUpScreen</string>
+    <string name="title_activity_main_screen">Choose Service</string>
+
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="title_activity_more_services">More Services</string>
+    <string name="title_activity_business_list">Business List</string>
+    <string name="title_activity_business_detail">BusinessDetail</string>
+    <string name="title_activity_businesses_map">Map</string>
+    <string name="title_activity_request_quote_screen">RequestQuoteScreen</string>
+    <string name="title_activity_quote_accepted_screen">QuoteAcceptedScreen</string>
+    <string name="title_activity_tradie_quote_reply_screen">TradieQuoteReplyScreen</string>
+    <string name="title_activity_job_detail_screen">JobDetailScreen</string>
+    <string name="title_activity_full_screen_image">FullScreenImage</string>
+    <string name="title_activity_forgot_password_screen">ForgotPasswordScreen</string>
+    <string name="title_activity_customer_profile_screen">CustomerProfileScreen</string>
+    <string name="title_activity_tradie_profile_screen">TradieProfileScreen</string>
+
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#FFCC11</color>
+    <color name="PrimaryDarkColor">#E3B407</color>
+    <color name="White">#FFFFFF</color>
+    <color name="StatusBarColorLoginScreen">#D9DBDB</color>
+    <color name="StatusBarColorTransparent">#00FFFFFF</color>
+</resources>

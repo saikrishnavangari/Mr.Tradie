@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#AA000000">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButtonClose"
+        android:background="@drawable/ic_action_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp" />
+
+    <ScrollView
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Leave a Rating"
+                android:textColor="@color/White"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="46dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:textColor="@color/White"
+                android:text="How good did your Tradie get the Job done?"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarComment"
+                android:layout_marginTop="40dp"
+                android:stepSize="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp" />
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66ffffff"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Comment"
+                android:textColor="@color/PrimaryColor"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:theme="@style/EditBottomLineRating"
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextComment"
+                android:hint="Write a comment"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"/>
+
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageButtonSubmitRating"
+                android:background="@drawable/button_sendrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

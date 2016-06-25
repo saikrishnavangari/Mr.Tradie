@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/PrimaryColor</item>
+        <item name="android:colorPrimaryDark">@color/PrimaryDarkColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="SwitchColor" parent="Theme.AppCompat.Light.NoActionBar">
+        ...
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/PrimaryDarkColor</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/White</item>
+        <!-- Inactive track color(30% transparency) -->
+        <item name="android:colorForeground">@color/PrimaryDarkColor</item>
+        ...
+    </style>
+
+    <style name="MyHoloTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="MyHoloLightTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_quote_setting</item>
+    </style>
+
+    <style name="EditBottomLine" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/White</item>
+        <item name="colorControlActivated">@color/White</item>
+        <item name="colorControlHighlight">@color/White</item>
+    </style>
+
+    <style name="EditBottomLineRating" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#55ffffff</item>
+        <item name="colorControlActivated">#55ffffff</item>
+        <item name="colorControlHighlight">#55ffffff</item>
+    </style>
+
+</resources>

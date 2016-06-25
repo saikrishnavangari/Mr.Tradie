@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="au.com.appscore.mrtradie.LoginScreen">
+
+
+
+    <ScrollView
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewLogo"
+                android:src="@drawable/logo_signin"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL ADDRESS"
+
+        android:textColor="#FFCC11"
+        android:id="@+id/textViewEmailAddress"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_alignLeft="@+id/imageButtonSignIn"
+        android:layout_alignRight="@+id/imageButtonSignIn"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmailAddress"
+        android:layout_below="@id/textViewEmailAddress"
+        android:layout_alignLeft="@+id/imageButtonSignIn"
+        android:layout_alignRight="@+id/imageButtonSignIn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textColor="#FFCC11"
+        android:id="@+id/textViewPassword"
+        android:layout_below="@+id/editTextEmailAddress"
+        android:layout_alignLeft="@+id/imageButtonSignIn"
+        android:layout_alignRight="@+id/imageButtonSignIn"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignLeft="@+id/imageButtonSignIn"
+        android:layout_alignRight="@+id/imageButtonSignIn"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonSignIn"
+        android:background="@drawable/btn_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_marginTop="5dp"
+        android:text="FORGOT PASSWORD ?"
+        android:textColor="@color/PrimaryColor"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageButtonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewLoginSelection"
+        android:src="@drawable/login_selection_or"
+        android:layout_below="@+id/textViewForgotPassword"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/loginButtonWithFacebook"
+        android:layout_alignLeft="@+id/imageButtonSignIn"
+        android:layout_alignRight="@+id/imageButtonSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewLoginSelection"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewNoAccount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/no_account"
+        android:layout_below="@id/loginButtonWithFacebook"
+        android:layout_marginTop="15dp"
+        />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustNothing"
+    tools:context="au.com.appscore.mrtradie.Jobboard.SendApplication.SendApplicationActivity">
+    <include layout="@layout/tool_bar"
+        android:id="@+id/include" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:orientation="vertical"
+        android:layout_above="@+id/sendapp_details"
+        android:background="@color/PrimaryColor"
+        >
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp">
+            <EditText
+                android:id="@+id/calc_txt_Prise"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="25dp"
+                android:textColor="@color/White"
+                android:singleLine="true"
+                android:hint="Enter Estimate"
+                android:shadowColor="@color/White"
+                android:textColorHint="#9cfeffff"
+                android:theme="@style/EditBottomLine"/>
+            <Button
+                android:id="@+id/calc_clear_estmate"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/icon_decline_disabled" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" DESCRIPTION"
+            android:textSize="12dp"
+            android:textColor="@color/White"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditBottomLine"
+            android:editable="false"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/sendapp_description"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/sendapp_details"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sendapp_button"
+            android:background="#4D567D"
+            android:text="Send Application"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_action_user"
+                android:id="@+id/imageView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Client: Jone Doe"
+                android:id="@+id/sendapp_user_text"
+                android:layout_toEndOf="@+id/imageView6"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_mail"
+                android:id="@+id/sendapp_mail_button"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/sendapp_call_button"
+                android:layout_marginRight="20dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_call"
+                android:id="@+id/sendapp_call_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Status: No Response, On Job Board"
+                android:id="@+id/sendapp_user_description"
+                android:layout_below="@+id/sendapp_user_text"
+                android:layout_toEndOf="@+id/imageView6" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_action_location_balloon"
+                android:id="@+id/imageView7" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView7"
+                android:id="@+id/textView3"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="address"
+                android:id="@+id/sendapp_address"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_below="@+id/textView3" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_action_clock"
+                android:id="@+id/imageView8" />
+            <au.com.appscore.mrtradie.NonScrollListView
+                android:id="@+id/listViewAvailability"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:choiceMode="singleChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView8"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

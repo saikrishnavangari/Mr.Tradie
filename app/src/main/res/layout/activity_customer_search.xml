@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="au.com.appscore.mrtradie.Search.Activity.CustomerSearchActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryColor"
+        android:orientation="vertical">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/White"
+            android:id="@+id/search_view_search"/>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/PrimaryColor"
+            app:tabIndicatorColor="#4D567D"
+            app:tabTextColor="#9cfeffff"
+            app:tabSelectedTextColor="@color/White"
+            android:id="@+id/quotes_tab"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quote_search_list_view"
+        android:dividerHeight="5.0sp">
+
+    </ListView>
+</LinearLayout>

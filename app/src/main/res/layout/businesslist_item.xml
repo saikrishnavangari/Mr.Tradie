@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="140dp"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageViewBusinessImage"
+        android:src="@drawable/btn_tradie"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/textViewBusinessName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewBusinessImage"
+        android:layout_toEndOf="@+id/imageViewBusinessImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="asdasdasdasdasdasdasdasdasdasd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/textViewBusinessAddress"
+        android:layout_below="@+id/textViewBusinessName"
+        android:layout_marginTop="0dp"
+        android:layout_alignLeft="@+id/textViewBusinessName"
+        android:layout_alignStart="@+id/textViewBusinessName"
+        android:text="asdasdas"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/business_distance"
+        android:textSize="12sp"
+        android:text="111"
+        android:layout_below="@+id/textViewBusinessAddress"
+        android:layout_alignStart="@+id/textViewBusinessAddress" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/business_score"
+        android:textSize="12sp"
+        android:text="111"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/imageButtonGetQuote"
+        android:layout_toEndOf="@+id/business_distance" />
+    <ImageView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_quote"
+        android:id="@+id/imageButtonGetQuote"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/business_distance"
+        android:layout_toEndOf="@+id/imageViewBusinessImage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_arrow_grey"
+        android:id="@+id/imageViewItemIndicator"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/imageButtonGetQuote"
+        android:layout_toRightOf="@+id/imageButtonGetQuote"
+        android:layout_toEndOf="@+id/imageButtonGetQuote" >
+
+        <ImageView
+            android:src="@drawable/icon_star_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/icon_star_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/icon_star_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/icon_star_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/icon_star_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/shadow"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

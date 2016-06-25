@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.com.appscore.mrtradie.FacebookUtils.FacebookFriendActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/facebookList"
+        android:layout_weight="1.22"></ListView>
+</LinearLayout>

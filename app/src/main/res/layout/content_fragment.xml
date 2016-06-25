@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:tag="64"
+                android:id="@+id/imageButtonElectrician"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/electrician"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="38"
+                android:id="@+id/imageButtonCarpenter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/carpenter"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="84"
+                android:id="@+id/imageButtonHandyman"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/handyman"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:tag="107"
+                android:id="@+id/imageButtonPlumber"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/plumber"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="103"
+                android:id="@+id/imageButtonPainter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/painter"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="80"
+                android:id="@+id/imageButtonGardener"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gardener"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:tag="29"
+                android:id="@+id/imageButtonBuilder"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/builder"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="51"
+                android:id="@+id/imageButtonConcreter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/concreter"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:tag="37"
+                android:id="@+id/imageButtonCabinatMaker"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/cabinet_maker"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreServices"
+        android:background="@drawable/btn_more"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

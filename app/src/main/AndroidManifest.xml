@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.com.appscore.mrtradie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <permission
+        android:name="au.com.appscore.mrtradie.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="au.com.appscore.mrtradie.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="au.com.appscore.mrtradie.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCwXw2Vp61ZGTnBVkE4igmBNwlGWSjUv04" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="au.com.appscore.mrtradie" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="au.com.appscore.mrtradie.GcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="au.com.appscore.mrtradie.LoginScreen"
+            android:label="@string/title_activity_login_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.TradieSignUpScreen"
+            android:label="@string/title_activity_tradie_sign_up_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="au.com.appscore.mrtradie.CustomerSignUpScreen"
+            android:label="@string/title_activity_customer_sign_up_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="au.com.appscore.mrtradie.MainScreen"
+            android:label="@string/title_activity_main_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.MoreServices"
+            android:label="@string/title_activity_more_services"
+            android:parentActivityName="au.com.appscore.mrtradie.MainScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.MainScreen" />
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="au.com.appscore.mrtradie.BusinessList" />
+
+        <activity
+            android:name="au.com.appscore.mrtradie.BusinessList"
+            android:label="@string/title_activity_business_list"
+            android:launchMode="singleTop"
+            android:parentActivityName="au.com.appscore.mrtradie.MoreServices"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.MoreServices" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.BusinessDetail"
+            android:label="@string/title_activity_business_detail"
+            android:parentActivityName="au.com.appscore.mrtradie.BusinessList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.BusinessList" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.BusinessesMap"
+            android:label="@string/title_activity_businesses_map"
+            android:parentActivityName="au.com.appscore.mrtradie.BusinessList"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.BusinessList" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.RequestQuoteScreen"
+            android:label="@string/title_activity_request_quote_screen"
+            android:parentActivityName="au.com.appscore.mrtradie.BusinessList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.BusinessList" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.CustomerQuoteRepliedScreen"
+            android:label="@string/title_activity_quote_accepted_screen"
+            android:parentActivityName="au.com.appscore.mrtradie.MainScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="au.com.appscore.mrtradie.TradieQuoteReplyScreen"
+            android:label="@string/title_activity_tradie_quote_reply_screen"
+            android:parentActivityName="au.com.appscore.mrtradie.MainScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.MainScreen" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.JobDetailScreen"
+            android:label="@string/title_activity_job_detail_screen"
+            android:parentActivityName="au.com.appscore.mrtradie.MainScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.com.appscore.mrtradie.MainScreen" />
+        </activity>
+        <activity
+            android:name="au.com.appscore.mrtradie.FullScreenImage"
+            android:label="@string/title_activity_full_screen_image" />
+        <activity
+            android:name="au.com.appscore.mrtradie.ForgotPasswordScreen"
+            android:label="@string/title_activity_forgot_password_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="au.com.appscore.mrtradie.CustomerProfileScreen"
+            android:label="@string/title_activity_customer_profile_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="au.com.appscore.mrtradie.TradieProfileScreen"
+            android:label="@string/title_activity_tradie_profile_screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="au.com.appscore.mrtradie.activity.Premium" />
+        <activity android:name="au.com.appscore.mrtradie.Jobboard.JobboardActivity" />
+        <activity
+            android:name="au.com.appscore.mrtradie.Jobboard.SendApplication.SendApplicationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="au.com.appscore.mrtradie.Search.Activity.CustomerSearchActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name="au.com.appscore.mrtradie.activity.PostJobActivity" />
+        <activity android:name="au.com.appscore.mrtradie.FacebookUtils.FacebookFriendActivity" />
+        <activity android:name="au.com.appscore.mrtradie.Jobboard.JobboardEntry"></activity>
+    </application>
+
+</manifest>

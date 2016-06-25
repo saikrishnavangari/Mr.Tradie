@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customer_quote"
+            android:checked="false"
+            android:icon="@drawable/icon_quote"
+            android:title="Get a Quote" />
+
+        <item
+            android:id="@+id/jobboard"
+            android:checked="false"
+            android:icon="@drawable/ic_job_board"
+            android:title="Job Board" />
+
+        <item
+            android:id="@+id/customer_jobs"
+            android:checked="false"
+            android:icon="@drawable/icon_jobs"
+            android:title="My Jobs" />
+
+        <item android:id="@+id/customer_facebook"
+            android:checked="false"
+            android:icon="@drawable/com_facebook_button_icon"
+            android:title="Facebook"/>
+        <item
+            android:id="@+id/customer_my_quotes"
+            android:checked="false"
+            android:icon="@drawable/icon_quotes"
+            android:title="My Quotes" />
+        <item
+            android:id="@+id/customer_tips"
+            android:checked="true"
+            android:icon="@drawable/icon_tipps"
+            android:title="Tips"
+            />
+
+        <!--item
+            android:id="@+id/fbFriends"
+            android:checkable="false"
+            android:icon="@drawable/icon_tipps"
+            android:title="FaceBook Friends" /-->
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout" />
+    </group>
+</menu>
